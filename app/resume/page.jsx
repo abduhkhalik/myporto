@@ -1,7 +1,7 @@
 "use client";
 
 import { FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
-import { SiMysql, SiMongodb, SiNextdotjs, SiTailwindcss, SiLaravel } from "react-icons/si";
+import { SiMysql, SiMongodb, SiNextdotjs, SiTailwindcss, SiLaravel, SiWordpress } from "react-icons/si";
 
 // about data
 const about = {
@@ -118,6 +118,10 @@ const skills = {
     {
       icon: <SiLaravel />,
       name: "Laravel",
+    },
+    {
+      icon: <SiWordpress />,
+      name: "Wordpress",
     },
   ],
 };

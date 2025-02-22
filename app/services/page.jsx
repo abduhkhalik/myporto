@@ -8,25 +8,25 @@ const services = [
   {
     num: "01",
     title: "Web Development",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas fermentum.",
+    desc: "In website development, I can create a website-based application and also pass the code to your existing website.",
     href: "",
   },
   {
     num: "02",
     title: "UI/UX Design",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas fermentum.",
+    desc: "In working on UI/UX, I am very excited, because making animations is very pleasing to the eye.",
     href: "",
   },
   {
     num: "03",
     title: "Content Design",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas fermentum.",
+    desc: "I can create content for you, your business, or your product so that your potential customers are interested in the product or service you offer.",
     href: "",
   },
   {
     num: "04",
     title: "SEO Optimization",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas fermentum.",
+    desc: "In the world of SEO technology is very important because SEO affects the performance of the website and also how quickly customers can find your business, just by entering keywords related to your business in search engines.",
     href: "",
   },
 ];

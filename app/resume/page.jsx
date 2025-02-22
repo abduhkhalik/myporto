@@ -1,12 +1,19 @@
 "use client";
 
 import { FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
-import { SiMysql, SiMongodb, SiNextdotjs, SiTailwindcss, SiLaravel, SiWordpress } from "react-icons/si";
+import {
+  SiMysql,
+  SiMongodb,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiLaravel,
+  SiWordpress,
+} from "react-icons/si";
 
 // about data
 const about = {
   title: "About Me",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas fermentum.",
+  desc: "Here are some lists that explain about me.",
   info: [
     { fieldName: "Name", fieldValue: "Abduh Khalik" },
     { fieldName: "Phone", fieldValue: "(+62)-859-6711-8133" },
@@ -23,7 +30,7 @@ const about = {
 const experince = {
   icon: "/public/assets/resume/badge.svg",
   title: "My Experience",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas fermentum.",
+  desc: "Here is a list of my work experience over the years, starting my career in the tech world.",
   items: [
     {
       company: "RS.TK.III Dr. Sindhu Trisno Palu",
@@ -57,7 +64,7 @@ const experince = {
 const education = {
   icon: "/public/assets/resume/cap.svg",
   title: "My Education",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas fermentum.",
+  desc: "The following are the learning levels in the world of technology until now.",
   items: [
     {
       institution: "Online Course Platform",
@@ -85,7 +92,7 @@ const education = {
 // skills data
 const skills = {
   title: "My Skills",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas fermentum.",
+  desc: "Here are the tools and technologies that I have now mastered in the past few years.",
   skillList: [
     {
       icon: <FaReact />,
@@ -263,11 +270,16 @@ const Resume = () => {
             >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.desc}</p>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {about.desc}
+                </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                   {about.info.map((info, i) => {
                     return (
-                      <li key={i} className="flex justify-center items-center xl:justify-start gap-4">
+                      <li
+                        key={i}
+                        className="flex justify-center items-center xl:justify-start gap-4"
+                      >
                         <span className="text-white/60">{info.fieldName}</span>
                         <span className="text-xl">{info.fieldValue}</span>
                       </li>

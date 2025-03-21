@@ -22,10 +22,10 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "Frontend",
+    category: "Landing Page",
     title: "Project 01",
-    desc: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    stack: [{ name: "HTML 5" }, { name: "Css 3" }, { name: "Javascript" }],
+    desc: "Hospital Landing Page Design and Development",
+    stack: [{ name: "Figma" }, { name: "NextJs" }, { name: "Typescript" }],
     img: "/assets/work/thumb1.png",
     live: "",
     github: "",

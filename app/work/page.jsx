@@ -47,7 +47,7 @@ const projects = [
     desc: "lorem ipsum dolor sit amet consectetur adipiscing elit",
     stack: [{ name: "Next.Js" }, { name: "Tailwind.css" }],
     img: "/assets/work/thumb3.png",
-    live: "",
+    live: "https://new-sindhu.vercel.app",
     github: "",
   },
 ];
@@ -98,7 +98,7 @@ const Work = () => {
               {/* buttons */}
               <div className="flex items-center gap-4">
                 {/* live projects button */}
-                <Link href={project.live}>
+                <Link target="_blank" href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex items-center justify-center group">
@@ -151,7 +151,11 @@ const Work = () => {
                 </SwiperSlide>
               ))}
               {/* Slider Buttons */}
-              <WorkSliderBtns containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" buttonStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all duration-300 rounded-full" iconStyles="" />
+              <WorkSliderBtns
+                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
+                buttonStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all duration-300 rounded-full"
+                iconStyles=""
+              />
             </Swiper>
           </div>
         </div>

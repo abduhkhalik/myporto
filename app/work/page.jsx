@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { BsArrowUpRight } from "react-icons/bs";
 
 import {
   Tooltip,
@@ -52,7 +52,7 @@ const Work = () => {
               {/* project desc */}
               <p className="text-white/60">{project.desc}</p>
               {/* stack */}
-              <ul className="flex gap-4">
+              <ul className="flex flex-wrap text-wrap gap-4">
                 {project.stack.map((item, i) => (
                   <li key={i} className="text-xl text-accent">
                     {item.name}
@@ -98,7 +98,7 @@ const Work = () => {
                       <Image
                         src={project.img}
                         fill
-                        className="object-cover"
+                        className="object-contain"
                         alt=""
                       />
                     </div>

@@ -18,39 +18,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
-
-const projects = [
-  {
-    num: "01",
-    category: "Landing Page",
-    title: "Project 01",
-    desc: "Hospital Landing Page Design and Development",
-    stack: [{ name: "Figma" }, { name: "NextJs" }, { name: "Typescript" }],
-    img: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "02",
-    category: "Fullstack",
-    title: "Project 02",
-    desc: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    stack: [{ name: "Next.Js" }, { name: "Tailwind.css" }, { name: "Node.Js" }],
-    img: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "03",
-    category: "Frontend",
-    title: "Project 03",
-    desc: "lorem ipsum dolor sit amet consectetur adipiscing elit",
-    stack: [{ name: "Next.Js" }, { name: "Tailwind.css" }],
-    img: "/assets/work/thumb3.png",
-    live: "https://new-sindhu.vercel.app",
-    github: "",
-  },
-];
+import { projects } from "@/lib/data";
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
@@ -106,19 +74,6 @@ const Work = () => {
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Live Project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </Link>
-                {/* gtihub projects button */}
-                <Link href={project.github}>
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex items-center justify-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p>Github Repositoriey</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
